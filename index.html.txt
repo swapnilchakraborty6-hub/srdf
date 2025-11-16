@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapnil Chakraborty - Senior Writer Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="resume-container">
+        <aside class="left-column">
+            <div class="profile">
+                <div class="profile-image-box">
+                    <img src="_assets/profile-photo.png" alt="Profile Photo of Swapnil Chakraborty">
+                </div>
+                
+                <h1 class="name">Swapnil Chakraborty</h1>
+                <p class="title">Writer, Director</p>
+            </div>
+
+            <section class="contact-info">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-item">
+                    <span class="icon">&#9990;</span> <p>+8801854632047</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">&#9993;</span> <p>swapnilchakraborty6@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">&#x1F3E0;</span> <p>Chattogram, Bangladesh</p>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skill-item">
+                    <p>Scriptwriting</p>
+                    <div class="chart-container" data-percent="61"></div>
+                </div>
+                <div class="skill-item">
+                    <p>Poetry</p>
+                    <div class="chart-container" data-percent="81"></div>
+                </div>
+                <div class="skill-item">
+                    <p>Style Guidelines</p>
+                    <div class="chart-container" data-percent="93"></div>
+                </div>
+                <div class="skill-item">
+                    <p>Content Development</p>
+                    <div class="chart-container" data-percent="70"></div>
+                </div>
+                <div class="skill-item">
+                    <p>Team Management</p>
+                    <div class="chart-container" data-percent="85"></div>
+                </div>
+            </section>
+        </aside>
+
+        <main class="right-column">
+            <section class="summary">
+                <h2 class="section-title">Summary</h2>
+                <p>Swapnil Chakraborty is a Bangladeshi author, poet, and scriptwriter based in Chattogram. He brings to life the subtle moods of everyday experience through poetry, fiction, and dramatic scripts. His writing captures the quiet beauty of human emotion — love, loneliness, memory, and the spaces between them.</p>
+            </section>
+
+            <section class="experience">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="job-entry">
+                    <h3>Drama and Films</h3>
+                    <ul>
+                        <li>**Kathgolaper Biye** — Scriptwriter &amp; Assistant Director</li>
+                        <li>**Se Bose Eka** — Scriptwriter</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <h3>Selected Publications</h3>
+                    <ul>
+                        <li>**Amar Pashe Thako Kichukkhon** — Poetry.</li>
+                        <li>**Je Dupur Bahana Banay** - Poetry</li>
+                        <li>**Dirghotomo Snaner Kache** — Poetry.</li>
+                        <li>**Antata Kichukkhon Bishonno Thakun** — Poetry</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="interests">
+                <h2 class="section-title">Interests</h2>
+                <p class="interest-details">
+                    Swapnil is open to:
+                    <br><br>
+                    Publishing new poetry and short fiction (including bilingual editions)
+                    <br>
+                    Scriptwriting for television, web, or film projects
+                    <br>
+                    Collaboration in creative and directorial ventureso
+                    <br>
+                    Literary and artistic partnerships
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

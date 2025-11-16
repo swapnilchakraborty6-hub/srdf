@@ -1,0 +1,23 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const chartContainers = document.querySelectorAll('.chart-container');
+    
+    chartContainers.forEach(container => {
+        const percent = container.getAttribute('data-percent');
+        
+        // Create an element to hold the percentage text
+        const percentText = document.createElement('span');
+        percentText.textContent = percent + '%';
+        
+        // Apply basic styling to center the text
+        percentText.style.position = 'absolute';
+        percentText.style.top = '50%';
+        percentText.style.left = '50%';
+        percentText.style.transform = 'translate(-50%, -100%)';
+        percentText.style.fontSize = '1.1em';
+        percentText.style.fontWeight = 'bold';
+        percentText.style.color = '#000000'; 
+        
+        // Append the text element to the chart container
+        container.appendChild(percentText);
+    });
+});

@@ -1,0 +1,196 @@
+/* --- Global Styles & Reset --- */
+:root {
+    --accent-color: #c5a799;
+    --light-accent-color: #ebe1db;
+    --text-color: #000000;
+    --background-color: #ffffff;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Arimo', sans-serif;
+}
+
+body {
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Resume Container (Two Column Layout) --- */
+.resume-container {
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    background-color: var(--background-color);
+}
+
+/* --- Left Column (Sidebar) --- */
+.left-column {
+    width: 35%;
+    background-color: var(--light-accent-color);
+    padding: 30px 20px;
+    border-right: 1px solid var(--accent-color);
+}
+
+.profile {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.profile-image-box {
+    /* Placeholder styles for the image area */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-color: #ddd; 
+    overflow: hidden;
+}
+
+.profile-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 2.2em;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 1.2em;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    letter-spacing: 2px;
+}
+
+/* --- General Section Styling --- */
+.section-title {
+    font-family: var(--font-primary);
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.contact-item .icon {
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+/* --- Skills Section (Charts) --- */
+.skills {
+    margin-top: 30px;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-item p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+/* This simulates the look of the circular chart with CSS/JS */
+.chart-container {
+    width: 80px;
+    height: 40px; /* Semi-circle height */
+    overflow: hidden;
+    position: relative;
+    margin: 5px auto 0;
+}
+
+.chart-container::before, .chart-container::after {
+    content: attr(data-percent) '%';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 10px solid var(--accent-color); 
+    border-radius: 50%;
+    border-color: var(--accent-color) var(--accent-color) var(--light-accent-color) var(--light-accent-color);
+    transform: rotate(calc(1deg * (3.6 * attr(data-percent) - 135))); /* Rotate based on percentage */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Limits to semi-circle for display */
+}
+
+.chart-container::before {
+    background: var(--light-accent-color);
+    z-index: 1;
+    content: '';
+    transform: rotate(0deg);
+}
+.chart-container::after {
+    background: var(--accent-color);
+    z-index: 2;
+    transform: rotate(calc(1deg * (1.8 * attr(data-percent) + 90)));
+    border-color: var(--accent-color);
+    font-size: 0;
+}
+
+
+/* --- Right Column (Main Content) --- */
+.right-column {
+    width: 65%;
+    padding: 30px 40px;
+}
+
+.summary p {
+    font-size: 0.95em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.experience, .interests {
+    margin-top: 30px;
+}
+
+.job-entry h3 {
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 10px;
+}
+
+.job-entry ul {
+    list-style-type: none;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.job-entry li {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.interest-details {
+    line-height: 1.8;
+}
